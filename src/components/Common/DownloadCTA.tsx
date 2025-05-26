@@ -60,7 +60,7 @@ export default function DownloadCTA() {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               {/* App Store Button - Enhanced */}
-              <button className="group flex items-center justify-center gap-3 bg-white hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold text-emerald-700 shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
+              <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
                 <Apple className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs opacity-80">Download on the</div>
@@ -69,7 +69,7 @@ export default function DownloadCTA() {
               </button>
               
               {/* Google Play Button - Enhanced */}
-              <button className="group flex items-center justify-center gap-3 bg-white hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold text-emerald-700 shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
+              <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
                 <Smartphone className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs opacity-80">GET IT ON</div>

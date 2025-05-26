@@ -51,11 +51,12 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative px-4 py-2 rounded-full font-medium transition-all duration-300 mx-1 ${
-                  pathname === item.href
-                    ? "text-primary-green bg-lush-mint/30 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-1/2 after:h-0.5 after:bg-citrus-gold"
-                    : "text-rich-charcoal hover:text-coral-red hover:bg-lush-mint/20"
-                }`}
+               className={`relative px-4 py-2 rounded-full font-medium mx-1 transition-all duration-300 ${
+  pathname === item.href
+    ? "bg-lush-mint/30 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-1/2 after:h-0.5 after:bg-citrus-gold"
+    : "hover:text-coral-red hover:bg-lush-mint/20"
+} text-primary`}
+
               >
                 {item.name}
               </Link>
@@ -72,7 +73,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-full bg-lush-mint/20 text-primary-green hover:bg-lush-mint/30 transition-colors duration-200 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-full bg-lush-mint/20 text-[var(--primary-green: #01615F)] hover:bg-lush-mint/30 transition-colors duration-200 focus:outline-none"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -99,12 +100,12 @@ const Navbar = () => {
               href={item.href}
               className={`block px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
                 pathname === item.href
-                  ? "bg-lush-mint/30 text-primary-green"
-                  : "text-rich-charcoal hover:text-coral-red hover:bg-lush-mint/20"
+                  ? "bg-lush-mint/30 text-[var(--primary-green: #01615F)]"
+                  : "text-[var(--primary-green: #01615F)] hover:text-coral-red hover:bg-lush-mint/20"
               } flex items-center justify-between`}
               onClick={() => setIsOpen(false)}
             >
-              <span>{item.name}</span>
+              <span className="text-[var(--primary-green: #01615F)] hover:text-coral-red hover:bg-lush-mint/20">{item.name}</span>
               {pathname === item.href && <span className="h-2 w-2 rounded-full bg-citrus-gold"></span>}
             </Link>
           ))}

@@ -89,7 +89,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
     <section className="w-full py-16 bg-gradient-to-b from-soft-ivory to-lush-mint/10" id='food-waste'>
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-green mb-3">Solutions That Make a Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3">Solutions That Make a Difference</h2>
           <div className="w-24 h-1 bg-coral-red mx-auto mb-6"></div>
           <p className="text-rich-charcoal text-lg max-w-2xl mx-auto">
             Our platform connects surplus food with people who value it, creating a sustainable cycle that benefits everyone.
@@ -141,7 +141,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
             <h3 className="text-2xl md:text-3xl font-bold text-rich-charcoal mb-4">
               {activeContent.title}
             </h3>
-            <p className="text-primary-green text-xl font-medium mb-3">
+            <p className="text-primary text-xl font-medium mb-3">
               {activeContent.subtitle}
             </p>
             <p className="text-rich-charcoal mb-6">
@@ -175,7 +175,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 text-center">
           {[
   { number: "67M", text: "tons of food wasted in India yearly", color: "text-coral-red" },
-  { number: "40%", text: "of food wasted post-harvest in India", color: "text-primary-green" },
+  { number: "40%", text: "of food wasted post-harvest in India", color: "text-primary" },
   { number: "194M", text: "people undernourished in India", color: "text-deep-forest" },
   { number: "30%", text: "reduction goal with Last Bite", color: "text-fresh-basil" }
 ]

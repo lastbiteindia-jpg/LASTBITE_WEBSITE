@@ -33,7 +33,7 @@
 
 body {
   background: var(--color-background);
-  color: var(--color-foreground);
+  /* color: var(--color-foreground); */
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 

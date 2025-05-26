@@ -30,7 +30,7 @@ const PartnerTypeCard: React.FC<PartnerTypeCardProps> = ({ icon: Icon, title, de
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
           <Icon size={24} className="text-white" />
         </div>
-        <h3 className="text-xl font-bold text-primary-green mb-2">{title}</h3>
+        <h3 className="text-xl font-bold text-primary mb-2">{title}</h3>
         <p className="text-foreground text-sm md:text-base">{description}</p>
       </div>
     </div>
@@ -55,7 +55,7 @@ const BenefitItem: React.FC<BenefitItemProps> = ({ text }) => (
 //       <div>
 //         <p className="italic text-foreground mb-4">{quote}</p>
 //         <div>
-//           <p className="font-bold text-primary-green">{author}</p>
+//           <p className="font-bold text-primary">{author}</p>
 //           <p className="text-sm text-foreground/70">{business}</p>
 //         </div>
 //       </div>
@@ -100,7 +100,7 @@ const PartnerComponent: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <h1 className="text-3xl md:text-5xl font-bold text-primary-green mb-4 leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold text-primary mb-4 leading-tight">
                 Partner With Last Bite
               </h1>
               <h2 className="text-xl md:text-2xl text-coral-red mb-6 font-medium italic">
@@ -108,7 +108,7 @@ const PartnerComponent: React.FC = () => {
               </h2>
               <p className="text-foreground mb-8 text-lg">
                 Every year, tons of perfectly good food go to waste — costing businesses money and harming the planet. 
-                At <span className="font-bold text-primary-green">Last Bite</span>, we help you recover revenue from surplus food by connecting you with local customers who care about sustainability.
+                At <span className="font-bold text-primary">Last Bite</span>, we help you recover revenue from surplus food by connecting you with local customers who care about sustainability.
               </p>
               <div className="bg-citrus-gold/20 p-4 rounded-lg mb-8">
                 <p className="font-bold text-deep-forest text-center text-xl">
@@ -125,7 +125,7 @@ const PartnerComponent: React.FC = () => {
                 <div className="absolute -top-4 -left-4 w-32 h-32 bg-zesty-lime/20 rounded-full -z-10"></div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-coral-red/20 rounded-full -z-10"></div>
                 <img 
-                  src="images/partner/partner.png" 
+                  src="images/partner/partner.svg" 
                   alt="Happy partner with Last Bite" 
                   className="rounded-xl shadow-lg relative z-10"
                 />
@@ -138,7 +138,7 @@ const PartnerComponent: React.FC = () => {
       {/* Why Partner Section */}
       <div className="container mx-auto px-4 mb-16">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-primary-green mb-4">Why Partner With Us?</h2>
+          <h2 className="text-3xl font-bold text-primary mb-4">Why Partner With Us?</h2>
           <p className="text-foreground max-w-2xl mx-auto">
             {"Whether you're a "}<span className="font-semibold">restaurant</span>, <span className="font-semibold">café</span>, <span className="font-semibold">bakery</span>, or <span className="font-semibold">supermarket</span>, partnering with us is a smart step toward <span className="font-semibold text-deep-forest">cutting Unconsumed Food</span>, <span className="font-semibold text-deep-forest">growing your impact</span>, and <span className="font-semibold text-deep-forest">increasing your visibility</span>.
           </p>
@@ -171,7 +171,7 @@ const PartnerComponent: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold text-primary-green mb-6">Environmental Impact</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">Environmental Impact</h2>
               <div className="space-y-6">
                 <p className="text-lg">
                   <span className="font-bold">Every bite counts.</span> Reduce Unconsumed Food, conserve resources, and help protect the planet. With Last Bite, sustainability is served fresh every day.
@@ -206,7 +206,7 @@ const PartnerComponent: React.FC = () => {
           <div className="absolute top-0 right-0 w-40 h-40 bg-lush-mint/30 rounded-full -translate-y-1/2 translate-x-1/2"></div>
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-citrus-gold/20 rounded-full translate-y-1/2 -translate-x-1/2"></div>
           
-          <h2 className="text-3xl font-bold text-primary-green mb-4 relative z-10">Join the movement</h2>
+          <h2 className="text-3xl font-bold text-primary mb-4 relative z-10">Join the movement</h2>
           <p className="text-xl text-foreground mb-8 relative z-10">Partner with Last Bite today and be part of the solution.</p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
@@ -225,7 +225,7 @@ const PartnerComponent: React.FC = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-            <button className="bg-white border-2 border-primary-green text-primary-green py-3 px-8 rounded-full font-medium hover:bg-primary-green/5 transition-colors flex items-center justify-center gap-2">
+            <button className="bg-white border-2 border-primary-green text-primary py-3 px-8 rounded-full font-medium hover:bg-primary-green/5 transition-colors flex items-center justify-center gap-2">
               Schedule a Demo
             </button>
             </a>

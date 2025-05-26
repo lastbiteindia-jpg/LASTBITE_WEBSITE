@@ -77,12 +77,12 @@ export default function PartnerBenefits() {
               >
                 <div className="flex items-start">
                   <div className={`p-3 rounded-full mr-4 transition-colors duration-300 ${
-                    isHovered === benefit.id ? 'bg-coral-red text-white' : 'bg-lush-mint text-primary-green'
+                    isHovered === benefit.id ? 'bg-coral-red text-white' : 'bg-lush-mint text-primary'
                   }`}>
                     {benefit.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-primary-green">
+                    <h3 className="text-xl font-semibold mb-2 text-primary">
                       {benefit.title}
                     </h3>
                     <p className="text-gray-700">{benefit.description}</p>

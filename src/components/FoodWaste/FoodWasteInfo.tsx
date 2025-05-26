@@ -15,7 +15,7 @@ export default function FoodWasteInfo() {
         <div className="relative mb-16">
           <div className="absolute inset-0 bg-lush-mint/20 rounded-full transform scale-[1.8] blur-3xl opacity-30"></div>
           <div className="relative z-10 text-center">
-            <span className="inline-block text-sm font-semibold text-primary-green px-6 py-1.5 rounded-full mb-4"
+            <span className="inline-block text-sm font-semibold text-primary px-6 py-1.5 rounded-full mb-4"
                   style={{ backgroundColor: 'var(--lush-mint)', opacity: 0.8 }}>
               Growing Crisis
             </span>
@@ -331,8 +331,8 @@ export default function FoodWasteInfo() {
                     <Link href='/partner#partner'>
                     <button className="inline-flex items-center justify-center px-8 py-4 font-medium rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
                       style={{ 
-                        backgroundColor: 'var(--zesty-lime)', 
-                        color: 'var(--deep-forest)'
+                        backgroundColor: 'var(--coral-red)', 
+                        color: 'white'
                       }}>
                       Partner With Us
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

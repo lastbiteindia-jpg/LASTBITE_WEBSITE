@@ -43,16 +43,16 @@ export default function HeroSection() {
           
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !text-[var(--soft-ivory)] mb-4 mt-4">
-            {"India's Evers First Surplus"}
+            {"India's First Ever Surplus"}
             <span className="relative inline-block mx-2">
               <span className="relative z-10">Food</span>
-              <span className="absolute bottom-1 left-0 w-full h-4 bg-coral-red/70 -rotate-2 z-0"></span>
+              {/* <span className="absolute bottom-1 left-0 w-full h-4 bg-coral-red/70 -rotate-2 z-0"></span> */}
             </span> 
             Delivery App
           </h1>
             {/* Trust Badge */}
           <div className="inline-block mb-6 mt-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
-            <p className="text-primary-green font-semibold text-sm md:text-base tracking-wider"> WE DELIVER TRUST </p>
+            <p className="text-primary font-semibold text-sm md:text-base tracking-wider"> WE DELIVER TRUST </p>
           </div>
           {/* Slogan */}
           {/* <p className="text-xl md:text-2xl text-soft-ivory/90 mt-6 mb-10">
@@ -65,7 +65,7 @@ export default function HeroSection() {
               <Download size={20} />
               Download for iOS
             </button>
-            <button className="bg-lush-mint hover:bg-lush-mint/90 text-primary-green rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-lush-mint hover:bg-lush-mint/90 text-primary rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               <Download size={20} />
               Download for Android
             </button>

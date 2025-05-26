@@ -86,7 +86,7 @@ export default function PartnerTypes() {
                 <div className={`p-5 border-t-4 transition-colors duration-300 ${
                   activePartner === partner.id ? 'border-coral-red' : 'border-lush-mint'
                 }`}>
-                  <h3 className="text-xl font-semibold text-primary-green">
+                  <h3 className="text-xl font-semibold text-primary">
                     {partner.title}
                   </h3>
                 </div>

@@ -11,20 +11,17 @@ export default function AboutUsSection() {
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-citrus-gold/10 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-coral-red/5 rounded-full blur-3xl"></div>
       
-   
-     
-      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header with illustration */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
           <div className="md:w-1/2">
             <div className="inline-block px-4 py-1 bg-lush-mint/20 rounded-full mb-4">
-              <span className="text-primary-green font-medium">Why Last Bite?</span>
+              <span className="text-primary font-medium">Why Last Bite?</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-rich-charcoal mb-6">About Us</h2>
             <div className="h-1 w-20 bg-coral-red rounded-full mb-6"></div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Last Bite is <span className="text-primary-green font-semibold">{"India's first surplus food app</span>, founded in 2025 to reduce Unconsumed Food and promote sustainability. We connect consumers with nearby restaurants, cafés, bakeries, and supermarkets offering unsold, perfectly good food at discounted prices."}</span>
+              Last Bite is <span className="text-primary font-semibold">{"India's first surplus food app, founded in 2025 to reduce Unconsumed Food and promote sustainability. We connect consumers with nearby restaurants, cafés, bakeries, and supermarkets offering unsold, perfectly good food at discounted prices."}</span>
             </p>
           </div>
           
@@ -61,7 +58,7 @@ export default function AboutUsSection() {
               <div className="absolute -top-6 -right-6 bg-white rounded-lg shadow-lg p-4 transform rotate-3">
                 <div className="flex items-center gap-2">
                   <Leaf className="h-5 w-5 text-zesty-lime" />
-                  <span className="font-semibold text-primary-green">Eco-Friendly</span>
+                  <span className="font-semibold text-primary">Eco-Friendly</span>
                 </div>
               </div>
               
@@ -69,7 +66,7 @@ export default function AboutUsSection() {
               <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-4 transform -rotate-2">
                 <div className="flex items-center gap-2">
                   <ShoppingBag className="h-5 w-5 text-coral-red" />
-                  <span className="font-semibold text-primary-green">Save Money</span>
+                  <span className="font-semibold text-primary">Save Money</span>
                 </div>
               </div>
             </div>
@@ -77,7 +74,7 @@ export default function AboutUsSection() {
           
           <div className="md:w-1/2 order-1 md:order-2">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Our platform helps businesses <span className="text-primary-green font-semibold">recover revenue</span>, consumers <span className="text-primary-green font-semibold">save money</span>, and the planet by <span className="text-primary-green font-semibold">reducing waste</span> — all with one simple app.
+              Our platform helps businesses <span className="text-primary font-semibold">recover revenue</span>, consumers <span className="text-primary font-semibold">save money</span>, and the planet by <span className="text-primary font-semibold">reducing waste</span> — all with one simple app.
             </p>
             
             {/* Benefits cards instead of stats */}
@@ -124,7 +121,7 @@ export default function AboutUsSection() {
               </div>
               
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-primary-green mb-4">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed">A world where no food goes to waste and everyone enjoys affordable, sustainable meals.</p>
               </div>
             </div>
@@ -166,7 +163,7 @@ export default function AboutUsSection() {
           <div className="relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between mb-10 gap-6">
               <div>
-                <h3 className="text-3xl font-bold text-primary-green mb-2">Our Goals</h3>
+                <h3 className="text-3xl font-bold text-primary mb-2">Our Goals</h3>
                 <p className="text-gray-600">What we aim to achieve in the near future</p>
               </div>
               
@@ -218,36 +215,56 @@ export default function AboutUsSection() {
             </div>
           </div>
         </div>
+
+        {/* Responsive Hand Image - Absolute on desktop, responsive on mobile */}
+        <div className="block lg:hidden flex justify-center mt-8 mb-8">
+          <div className="w-48 sm:w-56 md:w-64 max-w-xs">
+            <img 
+              src="/images/about/cover.png" 
+              alt="Hand illustration"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
         
-     {/* Call to action */}
-<div className="mt-8 text-center">
-  <h3 className="text-2xl md:text-3xl font-bold text-rich-charcoal mb-4">
-    Start Saving Food Today
-  </h3>
-  <p className="max-w-xl mx-auto text-base md:text-lg text-gray-700 mb-6">
-    With Last Bite, you get great food at low prices while helping the planet. 
-    Download the app and be part of the solution.
-  </p>
-  <button
-    onClick={() => {
-      const nextSection = document.getElementById('download-app');
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }}
-    className="bg-coral-red hover:bg-coral-red/90 text-white font-medium py-3 px-6 rounded-full inline-flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-    </svg>
-  </button>
-</div>
+        {/* Desktop absolute positioned hand image */}
+        <div className="hidden lg:block absolute right-2 xl:right-4 bottom-8 xl:bottom-12 w-60 xl:w-72 2xl:w-80 z-20">
+          <img 
+            src="/images/about/cover.png" 
+            alt="Hand illustration"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+
+        {/* Call to action */}
+        <div className="mt-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-rich-charcoal mb-4">
+            Start Saving Food Today
+          </h3>
+          <p className="max-w-xl mx-auto text-base md:text-lg text-gray-700 mb-6">
+            With Last Bite, you get great food at low prices while helping the planet. 
+            Download the app and be part of the solution.
+          </p>
+          <button
+            onClick={() => {
+              const nextSection = document.getElementById('download-app');
+              if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="bg-coral-red hover:bg-coral-red/90 text-white font-medium py-3 px-6 rounded-full inline-flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
 
       </div>
     </section>

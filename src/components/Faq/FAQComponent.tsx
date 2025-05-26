@@ -75,11 +75,11 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
       onClick={onClick}
     >
       <div className="flex justify-between items-center py-4 px-2 hover:bg-soft-ivory transition-colors duration-200">
-        <h3 className="font-medium text-base md:text-lg text-primary-green">{question}</h3>
+        <h3 className="font-medium text-base md:text-lg text-primary">{question}</h3>
         {isOpen ? (
           <ChevronUp className="text-coral-red flex-shrink-0" size={20} />
         ) : (
-          <ChevronDown className="text-primary-green flex-shrink-0" size={20} />
+          <ChevronDown className="text-primary flex-shrink-0" size={20} />
         )}
       </div>
 
@@ -228,7 +228,7 @@ export default function FAQComponent() {
     };
   
     return (
-      <div className="bg-gradient-to-b from-white to-lush-mint/30 min-h-screen pt-36 pb-20">
+      <div className="bg-gradient-to-b from-white to-lush-mint/30 min-h-screen pt-36 pb-20 relative overflow-hidden">
         {/* Decorative Wave */}
         <div className="absolute left-0 right-0 -top-1 h-16 overflow-hidden z-0">
           <div className="w-full h-full bg-white"></div>
@@ -236,23 +236,42 @@ export default function FAQComponent() {
         
         <div className="container mx-auto px-4 relative z-10">
           {/* Header Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 relative">
             <div className="inline-block mb-4 relative">
               <div className="absolute -top-6 -left-6 w-16 h-16 bg-zesty-lime/20 rounded-full -z-10"></div>
               <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-coral-red/20 rounded-full -z-10"></div>
               <img 
-                src="/images/logo/logo/Lb (full)/LB (full).svg" 
+                src="/images/logo/logo/Lb (secondary logo)/LB (secondary logo).svg" 
                 alt="Last Bite Logo" 
-                className="w-20 h-20 mx-auto"
+                className="w-40 h-40 mx-auto"
               />
-              
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-green mb-3">Frequently Asked Questions</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3">Frequently Asked Questions</h1>
             <p className="text-lg md:text-xl text-deep-forest max-w-2xl mx-auto">
               {"Find answers to common questions about Last Bite and how we're working to reduce Unconsumed Food one bite at a time."}
             </p>
           </div>
-  
+
+          {/* Mobile/Tablet Hand Image - Shows below header on smaller screens */}
+          <div className="block lg:hidden flex justify-center mt-8 mb-8">
+            <div className="w-48 sm:w-56 md:w-64 max-w-xs">
+              <img 
+                src="/images/about/img 1.png" 
+                alt="Hand illustration"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Desktop Hand Image - Absolute positioned in right corner */}
+          <div className="hidden lg:block absolute top-36 right-2 xl:right-4 2xl:right-8 w-56 xl:w-64 2xl:w-72 z-20">
+            <img 
+              src="/images/about/img 1.png" 
+              alt="Hand illustration"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
           {/* Search & Categories Overview */}
           <div className="max-w-3xl mx-auto mb-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
@@ -281,21 +300,21 @@ export default function FAQComponent() {
                 <div className="w-16 h-16 rounded-full bg-citrus-gold/20 flex items-center justify-center mb-3">
                   <img src="/images/faq/1.svg" alt="Save Money" className="w-14 h-14 rounded-full" />
                 </div>
-                <h3 className="font-bold text-primary-green mb-1">Save Money</h3>
+                <h3 className="font-bold text-primary mb-1">Save Money</h3>
                 <p className="text-sm text-foreground/80">Get quality food at discounted prices</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-zesty-lime/20 flex items-center justify-center mb-3">
                   <img src="/images/faq/3.svg" alt="Save Planet" className="w-14 h-14 rounded-full" />
                 </div>
-                <h3 className="font-bold text-primary-green mb-1">Save the Planet</h3>
+                <h3 className="font-bold text-primary mb-1">Save the Planet</h3>
                 <p className="text-sm text-foreground/80">Help reduce Unconsumed Food and emissions</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-coral-red/20 flex items-center justify-center mb-3">
                   <img src="/images/faq/5.svg" alt="Enjoy Food" className="w-14 h-14 rounded-full" />
                 </div>
-                <h3 className="font-bold text-primary-green mb-1">Enjoy Food</h3>
+                <h3 className="font-bold text-primary mb-1">Enjoy Food</h3>
                 <p className="text-sm text-foreground/80">Discover delicious meals from local places</p>
               </div>
             </div>
@@ -303,14 +322,6 @@ export default function FAQComponent() {
   
           {/* FAQ Accordions by Category */}
           <div className="max-w-6xl mx-auto relative">
-            {/* Decorative Elements */}
-            {/* <div className="hidden md:block absolute -left-16 top-32">
-              <img src="https://img.freepik.com/free-photo/top-view-table-full-food_23-2149209253.jpg?semt=ais_hybrid&w=740" alt="Food illustration" className="w-20 h-32 object-contain" />
-            </div>
-            <div className="hidden md:block absolute -right-16 top-64">
-              <img src="https://img.freepik.com/free-photo/top-view-table-full-food_23-2149209253.jpg?semt=ais_hybrid&w=740" alt="Earth illustration" className="w-20 h-20 object-contain" />
-            </div> */}
-            
             {/* FAQ Categories */}
             {faqData.map((category, index) => (
               <FAQCategory 
@@ -334,4 +345,4 @@ export default function FAQComponent() {
         </div>
       </div>
     );
-  }
+}

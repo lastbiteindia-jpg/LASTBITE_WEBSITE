@@ -39,11 +39,11 @@ export default function FoodWasteImpact() {
           </p>
           <div className="bg-lush-mint rounded-lg p-4 shadow-sm">
             <p className="font-bold text-deep-forest">0.25 tons of methane</p>
-            <p className="text-primary-green">A greenhouse gas 25x more potent than CO₂</p>
+            <p className="text-primary">A greenhouse gas 25x more potent than CO₂</p>
           </div>
           <div className="bg-lush-mint rounded-lg p-4 shadow-sm">
             <p className="font-bold text-deep-forest">7–9 tons of CO₂e emissions</p>
-            <p className="text-primary-green">Released directly into the atmosphere</p>
+            <p className="text-primary">Released directly into the atmosphere</p>
           </div>
         </div>
       )
@@ -56,11 +56,11 @@ export default function FoodWasteImpact() {
           <p className="text-lg mb-4">Food waste causes <span className="font-bold">8–10% of global greenhouse gas emissions</span> and contributes to:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-ash-gray bg-opacity-30 rounded-lg p-4">
-              <h4 className="font-bold text-primary-green mb-2">Methane Emissions</h4>
+              <h4 className="font-bold text-primary mb-2">Methane Emissions</h4>
               <p>From decomposing food in landfills</p>
             </div>
             <div className="bg-ash-gray bg-opacity-30 rounded-lg p-4">
-              <h4 className="font-bold text-primary-green mb-2">Carbon Footprint</h4>
+              <h4 className="font-bold text-primary mb-2">Carbon Footprint</h4>
               <p>From producing and transporting uneaten food</p>
             </div>
           </div>
@@ -75,16 +75,16 @@ export default function FoodWasteImpact() {
           <p className="text-lg mb-4">By <span className="font-bold">reducing Unconsumed Food</span>, we can make a difference:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-soft-ivory rounded-lg p-4 border-l-4 border-zesty-lime">
-              <p className="font-bold text-primary-green">Cut harmful emissions</p>
+              <p className="font-bold text-primary">Cut harmful emissions</p>
             </div>
             <div className="bg-soft-ivory rounded-lg p-4 border-l-4 border-zesty-lime">
-              <p className="font-bold text-primary-green">Conserve natural resources</p>
+              <p className="font-bold text-primary">Conserve natural resources</p>
             </div>
             <div className="bg-soft-ivory rounded-lg p-4 border-l-4 border-zesty-lime">
-              <p className="font-bold text-primary-green">Fight climate change</p>
+              <p className="font-bold text-primary">Fight climate change</p>
             </div>
             <div className="bg-soft-ivory rounded-lg p-4 border-l-4 border-zesty-lime">
-              <p className="font-bold text-primary-green">Support sustainable food systems</p>
+              <p className="font-bold text-primary">Support sustainable food systems</p>
             </div>
           </div>
         </div>
@@ -98,11 +98,11 @@ export default function FoodWasteImpact() {
           <p className="text-lg mb-4">Reducing Unconsumed Food creates economic value:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-citrus-gold bg-opacity-20 rounded-lg p-4 shadow-sm">
-              <h4 className="font-bold text-primary-green mb-2">For Businesses</h4>
+              <h4 className="font-bold text-primary mb-2">For Businesses</h4>
               <p>Recover revenue from unsold inventory</p>
             </div>
             <div className="bg-citrus-gold bg-opacity-20 rounded-lg p-4 shadow-sm">
-              <h4 className="font-bold text-primary-green mb-2">For Consumers</h4>
+              <h4 className="font-bold text-primary mb-2">For Consumers</h4>
               <p>Save money through discounted surplus food</p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function FoodWasteImpact() {
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Left content */}
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 Why Reducing Unconsumed Food Matters
               </h2>
               <p className="text-lush-mint text-lg mb-8">
@@ -136,7 +136,7 @@ export default function FoodWasteImpact() {
                     key={key}
                     className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
                       activeTab === key 
-                      ? 'bg-white text-primary-green' 
+                      ? 'bg-white text-primary' 
                       : 'bg-deep-forest text-white hover:bg-deep-forest hover:bg-opacity-70'
                     }`}
                     onClick={() => setActiveTab(key as TabKey)}
@@ -188,19 +188,19 @@ export default function FoodWasteImpact() {
       {/* Statistics grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-20 space-y-14">
         <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border-l-4 border-fresh-basil">
-          <p className="text-3xl font-bold text-primary-green">1/3</p>
+          <p className="text-3xl font-bold text-primary">1/3</p>
           <p className="text-foreground">Of all food produced globally is wasted</p>
         </div>
         <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border-l-4 border-zesty-lime">
-          <p className="text-3xl font-bold text-primary-green">931M</p>
+          <p className="text-3xl font-bold text-primary">931M</p>
           <p className="text-foreground">Tonnes of Unconsumed Foodd annually</p>
         </div>
         <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border-l-4 border-coral-red">
-          <p className="text-3xl font-bold text-primary-green">25%</p>
+          <p className="text-3xl font-bold text-primary">25%</p>
           <p className="text-foreground">Reduction goal by 2030</p>
         </div>
         <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border-l-4 border-citrus-gold">
-          <p className="text-3xl font-bold text-primary-green">₹1.5L Cr</p>
+          <p className="text-3xl font-bold text-primary">₹1.5L Cr</p>
           <p className="text-foreground">Annual Unconsumed Food value in India</p>
         </div>
       </div>
