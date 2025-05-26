@@ -221,7 +221,7 @@ const PartnerComponent: React.FC = () => {
 </a>
 
     <a
-  href="https://calendly.com/lastbiteindia"
+  href="https://calendly.com/lastbiteindia/30min"
   target="_blank"
   rel="noopener noreferrer"
 >

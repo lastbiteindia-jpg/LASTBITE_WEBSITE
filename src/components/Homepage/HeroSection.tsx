@@ -42,7 +42,7 @@ export default function HeroSection() {
         
           
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-soft-ivory mb-4 mt-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !text-[var(--soft-ivory)] mb-4 mt-4">
             {"India's Evers First Surplus"}
             <span className="relative inline-block mx-2">
               <span className="relative z-10">Food</span>
@@ -51,7 +51,7 @@ export default function HeroSection() {
             Delivery App
           </h1>
             {/* Trust Badge */}
-          <div className="inline-block mb-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
+          <div className="inline-block mb-6 mt-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
             <p className="text-primary-green font-semibold text-sm md:text-base tracking-wider"> WE DELIVER TRUST </p>
           </div>
           {/* Slogan */}
