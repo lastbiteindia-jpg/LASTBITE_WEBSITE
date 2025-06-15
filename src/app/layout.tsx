@@ -13,6 +13,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Last Bite",
   description: "Food delivery website",
+  icons: {
+    icon: "/favicon.ico", // or .png if you're using that format
+  },
 };
 
 export default function RootLayout({
