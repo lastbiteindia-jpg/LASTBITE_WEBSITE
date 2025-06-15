@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { Apple, Smartphone, CheckCircle, MapPin, Clock } from 'lucide-react';
-
+// import { Apple, Smartphone, CheckCircle, MapPin, Clock } from 'lucide-react';
+import {CheckCircle, MapPin, Clock } from 'lucide-react';
 export default function DownloadCTA() {
   const [, setIsVisible] = useState(false);
   const [, setAnimatePhone] = useState(false);

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Download, ChevronDown } from 'lucide-react';
-
+// import { Download, ChevronDown } from 'lucide-react';
+import {  ChevronDown } from 'lucide-react';
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
   
