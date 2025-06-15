@@ -60,7 +60,7 @@ export default function HeroSection() {
           </p> */}
           
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <button className="bg-coral-red hover:bg-coral-red/90 text-soft-ivory rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               <Download size={20} />
               Download for iOS
@@ -69,7 +69,7 @@ export default function HeroSection() {
               <Download size={20} />
               Download for Android
             </button>
-          </div>
+          </div> */}
         </div>
         
         {/* Scroll Indicator */}

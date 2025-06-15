@@ -58,8 +58,8 @@ export default function DownloadCTA() {
               Get incredible deals on quality food while fighting waste. Join thousands of eco-conscious shoppers saving money every day.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              {/* App Store Button - Enhanced */}
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-10">
+             
               <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
                 <Apple className="w-6 h-6" />
                 <div className="text-left">
@@ -68,7 +68,7 @@ export default function DownloadCTA() {
                 </div>
               </button>
               
-              {/* Google Play Button - Enhanced */}
+              
               <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
                 <Smartphone className="w-6 h-6" />
                 <div className="text-left">
@@ -76,7 +76,7 @@ export default function DownloadCTA() {
                   <div className="text-base">Google Play</div>
                 </div>
               </button>
-            </div>
+            </div> */}
             
             {/* Feature badges replacing stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
