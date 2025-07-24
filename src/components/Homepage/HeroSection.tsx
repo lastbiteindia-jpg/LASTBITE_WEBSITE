@@ -43,12 +43,8 @@ export default function HeroSection() {
           
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !text-[var(--soft-ivory)] mb-4 mt-4">
-            {"India's First Ever Surplus"}
-            <span className="relative inline-block mx-2">
-              <span className="relative z-10">Food</span>
-              {/* <span className="absolute bottom-1 left-0 w-full h-4 bg-coral-red/70 -rotate-2 z-0"></span> */}
-            </span> 
-            Delivery App
+            {"India's Surplus destination"}
+           
           </h1>
             {/* Trust Badge */}
           <div className="inline-block mb-6 mt-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
