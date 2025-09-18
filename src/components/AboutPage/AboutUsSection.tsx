@@ -31,7 +31,7 @@ export default function AboutUsSection() {
               {/* Main illustration */}
               <div className="w-72 h-72 relative z-10 ">
                 <img 
-                  src="images/about/1.svg" 
+                  src="images/about/last-bite-laptop.jpeg" 
                   alt="Last Bite Eats  Illustration" 
                   className="w-full h-full object-contain "
                 />
@@ -50,7 +50,7 @@ export default function AboutUsSection() {
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="relative">
               <img 
-                src="images/about/about.png" 
+                src="images/about/three-people-gift.jpeg" 
                 alt="Food waste reduction" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />

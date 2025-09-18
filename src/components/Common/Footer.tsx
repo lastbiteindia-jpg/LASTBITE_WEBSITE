@@ -158,7 +158,7 @@ const Footer = () => {
               <Twitter className="h-5 w-5" />
             </a>
             <a
-              href="https://www.instagram.com/lastbite_india?igsh=MWR1cGc1anpvY3BobQ=="
+              href="https://www.instagram.com/lastbite_eats?igsh=MWR1cGc1anpvY3BobQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-gray-100 hover:bg-lush-mint hover:text-coral-red transition duration-300"

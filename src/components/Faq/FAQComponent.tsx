@@ -256,7 +256,7 @@ export default function FAQComponent() {
           <div className="block lg:hidden flex justify-center mt-8 mb-8">
             <div className="w-48 sm:w-56 md:w-64 max-w-xs">
               <img 
-                src="/images/about/img 1.png" 
+                src="/images/faq/gift-box.png" 
                 alt="Hand illustration"
                 className="w-full h-auto object-contain"
               />
@@ -266,7 +266,7 @@ export default function FAQComponent() {
           {/* Desktop Hand Image - Absolute positioned in right corner */}
           <div className="hidden lg:block absolute top-36 right-2 xl:right-4 2xl:right-8 w-56 xl:w-64 2xl:w-72 z-20">
             <img 
-              src="/images/about/img 1.png" 
+              src="/images/faq/gift-box.png" 
               alt="Hand illustration"
               className="w-full h-auto object-contain"
             />
