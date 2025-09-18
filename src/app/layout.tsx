@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Last Bite",
+  title: "Last Bite Eats ",
   description: "Food delivery website",
   icons: {
     icon: "/favicon.ico", // or .png if you're using that format

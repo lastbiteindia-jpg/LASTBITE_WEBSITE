@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Leaf, Target, Heart, Sprout, ShoppingBag, TrendingUp, Download, Users } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AboutUsSection() {
   return (
@@ -16,12 +17,12 @@ export default function AboutUsSection() {
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
           <div className="md:w-1/2">
             <div className="inline-block px-4 py-1 bg-lush-mint/20 rounded-full mb-4">
-              <span className="text-primary font-medium">Why Last Bite?</span>
+              <span className="text-primary font-medium">Why Last Bite Eats ?</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-rich-charcoal mb-6">About Us</h2>
             <div className="h-1 w-20 bg-coral-red rounded-full mb-6"></div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Last Bite is <span className="text-primary font-semibold">{"India's first surplus food app, founded in 2025 to reduce Unconsumed Food and promote sustainability. We connect consumers with nearby restaurants, cafés, bakeries, and supermarkets offering unsold, perfectly good food at discounted prices."}</span>
+              Last Bite Eats  is <span className="text-primary font-semibold">{"India's first surplus food app, founded in 2025 to reduce Unconsumed Food and promote sustainability. We connect consumers with nearby restaurants, cafés, bakeries, and supermarkets offering unsold, perfectly good food at discounted prices."}</span>
             </p>
           </div>
           
@@ -31,7 +32,7 @@ export default function AboutUsSection() {
               <div className="w-72 h-72 relative z-10 ">
                 <img 
                   src="images/about/1.svg" 
-                  alt="Last Bite Illustration" 
+                  alt="Last Bite Eats  Illustration" 
                   className="w-full h-full object-contain "
                 />
               </div>
@@ -147,6 +148,55 @@ export default function AboutUsSection() {
             </div>
           </div>
         </div>
+
+        <div className='space-y-20'>
+          <h2 className="text-3xl font-bold text-primary text-center">Meet Our Team</h2>
+          <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
+            {/* Team Member 1 */}
+            <div className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:-translate-y-2 active:scale-95 lg:active:scale-100">
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/about/founder-image.jpg" 
+                  alt="Sanjeetha Fakrudeen" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Gradient overlay for better text readability - denser shadow */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 lg:group-active:opacity-0 transition-opacity duration-300"></div>
+              
+              {/* Text overlay - staggered animation */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">
+                <h3 className="text-xl font-bold text-white mb-1 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">Sanjeetha Fakrudeen</h3>
+                <p className="text-white/90 text-sm transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300 delay-100">Co-Founder</p>
+              </div>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:-translate-y-2 active:scale-95 lg:active:scale-100">
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/about/founder-male-image.jpg" 
+                  alt="Ilyas" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Gradient overlay for better text readability - denser shadow */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 lg:group-active:opacity-0 transition-opacity duration-300"></div>
+              
+              {/* Text overlay - staggered animation */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">
+                <h3 className="text-xl font-bold text-white mb-1 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">Ilyas</h3>
+                <p className="text-white/90 text-sm transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300 delay-100">Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
         
         {/* Goals Section - Completely Redesigned */}
         <div className="bg-soft-ivory rounded-2xl p-8 md:p-12 relative overflow-hidden">
@@ -217,7 +267,7 @@ export default function AboutUsSection() {
         </div>
 
         {/* Responsive Hand Image - Absolute on desktop, responsive on mobile */}
-        <div className="block lg:hidden flex justify-center mt-8 mb-8">
+        <div className="lg:hidden flex justify-center mt-8 mb-8">
           <div className="w-48 sm:w-56 md:w-64 max-w-xs">
             <img 
               src="/images/about/cover.png" 
@@ -242,7 +292,7 @@ export default function AboutUsSection() {
             Start Saving Food Today
           </h3>
           <p className="max-w-xl mx-auto text-base md:text-lg text-gray-700 mb-6">
-            With Last Bite, you get great food at low prices while helping the planet. 
+            With Last Bite Eats , you get great food at low prices while helping the planet. 
             Download the app and be part of the solution.
           </p>
           <button

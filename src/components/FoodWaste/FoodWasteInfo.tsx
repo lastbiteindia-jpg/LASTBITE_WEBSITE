@@ -325,7 +325,7 @@ export default function FoodWasteInfo() {
                     Join Our Mission
                   </h3>
                   <p className="mb-10 text-white opacity-90 text-lg">
-                   {"Whether you're a business with surplus food or a conscious consumer, you can be part of the solution. Join the Last Bite network today."}
+                   {"Whether you're a business with surplus food or a conscious consumer, you can be part of the solution. Join the Last Bite Eats  network today."}
                   </p>
                   <div className="flex flex-wrap gap-5">
                     <Link href='/partner#partner'>

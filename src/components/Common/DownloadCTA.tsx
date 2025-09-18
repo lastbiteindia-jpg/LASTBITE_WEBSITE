@@ -51,7 +51,7 @@ export default function DownloadCTA() {
             
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight !text-white">
               <span className="text-coral-red">Rescue Food</span> With <br /> 
-              Last Bite
+              Last Bite Eats 
             </h2>
             
             <p className="text-xl mb-8 text-white/90 font-light max-w-lg leading-relaxed">
@@ -138,7 +138,7 @@ export default function DownloadCTA() {
                                   <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.676,8.237-6,5.5a1,1,0,0,1-1.352,0l-3-2.75a1,1,0,0,1,1.352-1.475l2.324,2.129,5.324-4.878a1,1,0,0,1,1.352,1.474Z"/>
                                 </svg>
                               </div>
-                              <div className="text-white font-bold text-lg">Last Bite</div>
+                              <div className="text-white font-bold text-lg">Last Bite Eats </div>
                             </div>
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                               <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

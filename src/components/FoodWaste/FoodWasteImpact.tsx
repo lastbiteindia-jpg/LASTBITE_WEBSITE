@@ -175,7 +175,7 @@ export default function FoodWasteImpact() {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <div>
                 <h3 className="text-xl font-bold text-white">Ready to make a difference?</h3>
-                <p className="text-lush-mint">Download the Last Bite app today</p>
+                <p className="text-lush-mint">Download the Last Bite Eats  app today</p>
               </div>
               <button className="bg-coral-red hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all" onClick={handleJoinClick}>
                 Get Started

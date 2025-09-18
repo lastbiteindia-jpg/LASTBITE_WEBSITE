@@ -96,7 +96,7 @@ export default function PartnerTypes() {
           
           <div className="mt-12 text-center">
             <p className="text-lg mb-6 max-w-3xl mx-auto">
-            Become a Last Bite partner and start turning your surplus into business opportunity.
+            Become a Last Bite Eats  partner and start turning your surplus into business opportunity.
             </p>
             <button className="bg-coral-red hover:bg-coral-red/90 text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg" onClick={handleJoinClick}>
               Partner With Us

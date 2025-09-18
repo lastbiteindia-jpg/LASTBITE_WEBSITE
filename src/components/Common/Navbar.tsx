@@ -36,16 +36,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center group">
-              <img src="/images/logo/logo/Lb (full)/LB (full).svg" alt="logo" width={150} height={75} />
+            <Link href="/" className="flex items-center group w-[80px]">
+              <img src="/images/logo/logo/last-bite-eats-logo.svg" alt="logo" width={150} height={75} />
             </Link>
           </div>
 
           <div className="hidden lg:flex items-center space-x-1">
             {[
-              { name: "About Last Bite", href: "/about" },
+              { name: "About Last Bite Eats ", href: "/about" },
               { name: "FAQ", href: "/faq" },
-              { name: "Partner with us", href: "/partner" },
+              { name: "Create impact with us", href: "/partner" },
               { name: "About food-waste", href: "/food-waste" },
             ].map((item) => (
               <Link
@@ -90,9 +90,9 @@ const Navbar = () => {
       >
         <div className="px-4 pt-3 pb-4 space-y-2 bg-white shadow-xl rounded-b-2xl mx-4">
           {[
-            { name: "About Last Bite", href: "/about" },
+            { name: "About Last Bite Eats ", href: "/about" },
             { name: "FAQ", href: "/faq" },
-            { name: "Partner with us", href: "/partner" },
+            { name: "Create impact with us", href: "/partner" },
             { name: "About food-waste", href: "/food-waste" },
           ].map((item) => (
             <Link

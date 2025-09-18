@@ -36,7 +36,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
   title: "For Consumers",
   subtitle: "Save Money, Reduce Surplus",
   description:
-    "Get high-quality meals and groceries at HALF PRICE OR LESS from your favorite local spots using the Last Bite app — delicious savings, made sustainable.",
+    "Get high-quality meals and groceries at HALF PRICE OR LESS from your favorite local spots using the Last Bite Eats  app — delicious savings, made sustainable.",
   features: [
     "Save up to 70% on fresh food",
     "Discover local businesses with surplus items",
@@ -50,7 +50,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
     businesses: {
       title: "For Businesses",
       subtitle: "Turn Surplus into Opportunity",
-      description: "Have more surplus foods and still-fresh goods? Here comes the last bite!",
+      description: "Have more surplus foods and still-fresh goods? Here comes the Last Bite Eats !",
       features: [
         "Cut surplus, earn more, reach eco-conscious customers",
         "Sell short-dated items while fresh, clear stock.",
@@ -63,7 +63,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
     communities: {
       title: "For Environment",
       subtitle: "Strengthen Local Food Systems",
-      description: "Every bite counts. Reduce surplus food, conserve resources, and help protect the planet. With Last Bite, sustainability is served fresh every day.",
+      description: "Every bite counts. Reduce surplus food, conserve resources, and help protect the planet. With Last Bite Eats , sustainability is served fresh every day.",
       features: [
         "Reducing Food unconsumed.",
         "Conserving Resources.",
@@ -177,7 +177,7 @@ export default function FoodWasteSolutionsSection({ learnMoreButton }: Props) {
   { number: "67M", text: "tons of food wasted in India yearly", color: "text-coral-red" },
   { number: "40%", text: "of food wasted post-harvest in India", color: "text-primary" },
   { number: "194M", text: "people undernourished in India", color: "text-deep-forest" },
-  { number: "30%", text: "reduction goal with Last Bite", color: "text-fresh-basil" }
+  { number: "30%", text: "reduction goal with Last Bite Eats ", color: "text-fresh-basil" }
 ]
 .map((stat, index) => (
             <div key={index} className="p-4 bg-white rounded-lg shadow-md">

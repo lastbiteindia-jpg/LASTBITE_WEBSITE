@@ -49,7 +49,7 @@ type FAQCategoryProps = {
 
 const CategoryIcon = ({ category }: CategoryIconProps) => {
   switch (category) {
-    case 'About Last Bite':
+    case 'About Last Bite Eats ':
       return <Coffee className="text-fresh-basil" size={24} />;
     case 'Ordering and Delivery':
       return <ShoppingBag className="text-coral-red" size={24} />;
@@ -128,18 +128,18 @@ export default function FAQComponent() {
     // Organizing FAQ items by category
     const faqData = [
       {
-        category: 'About Last Bite',
+        category: 'About Last Bite Eats ',
         items: [
           {
-            question: 'What is Last Bite?',
-            answer: 'Last Bite is a platform that connects customers with restaurants, bakeries, supermarkets, and grocery stores offering surplus food at discounted prices.'
+            question: 'What is Last Bite Eats ?',
+            answer: 'Last Bite Eats  is a platform that connects customers with restaurants, bakeries, supermarkets, and grocery stores offering surplus food at discounted prices.'
           },
           {
-            question: 'Why should I use Last Bite?',
+            question: 'Why should I use Last Bite Eats ?',
             answer: 'You get delicious food at lower prices while reducing Unconsumed Food and supporting sustainability.'
           },
           {
-            question: 'How does Last Bite work?',
+            question: 'How does Last Bite Eats  work?',
             answer: 'Download the app, browse surplus food deals near you, place an order, and get it delivered.'
           }
         ]
@@ -179,14 +179,14 @@ export default function FAQComponent() {
         items: [
           {
             question: 'Is the food fresh and safe?',
-            answer: 'Absolutely! All surplus food listed on Last Bite is fresh, safe, and meets quality standards.'
+            answer: 'Absolutely! All surplus food listed on Last Bite Eats  is fresh, safe, and meets quality standards.'
           },
           {
             question: 'How is Unconsumed Food reduced?',
             answer: 'We partner with businesses to ensure surplus food is sold before it spoils, reducing waste and supporting sustainability.'
           },
           {
-            question: 'Does Last Bite offer vegetarian or vegan options?',
+            question: 'Does Last Bite Eats  offer vegetarian or vegan options?',
             answer: 'Yes, you can filter options based on dietary preferences in the app.'
           }
         ]
@@ -195,11 +195,11 @@ export default function FAQComponent() {
         category: 'Support and Contact',
         items: [
           {
-            question: 'How can I contact Last Bite support?',
+            question: 'How can I contact Last Bite Eats  support?',
             answer: 'You can reach us through the app\'s Help Center or email us at lastbiteindia@gmail.com.'
           },
           {
-            question: 'Can I partner with Last Bite as a seller?',
+            question: 'Can I partner with Last Bite Eats  as a seller?',
             answer: 'Yes! Visit our \'Partner with Us\' page for details on how to join our network.'
           },
           {
@@ -242,13 +242,13 @@ export default function FAQComponent() {
               <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-coral-red/20 rounded-full -z-10"></div>
               <img 
                 src="/images/logo/logo/LB (secondary logo)/LB (secondary logo).svg" 
-                alt="Last Bite Logo" 
+                alt="Last Bite Eats  Logo" 
                 className="w-40 h-40 mx-auto"
               />
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-3">Frequently Asked Questions</h1>
             <p className="text-lg md:text-xl text-deep-forest max-w-2xl mx-auto">
-              {"Find answers to common questions about Last Bite and how we're working to reduce Unconsumed Food one bite at a time."}
+              {"Find answers to common questions about Last Bite Eats  and how we're working to reduce Unconsumed Food one bite at a time."}
             </p>
           </div>
 
