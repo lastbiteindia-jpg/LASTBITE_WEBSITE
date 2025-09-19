@@ -11,7 +11,7 @@ export default function AboutUsSection() {
       <div className="absolute top-0 right-0 w-64 h-64 bg-lush-mint/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-citrus-gold/10 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-coral-red/5 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header with illustration */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
@@ -25,18 +25,18 @@ export default function AboutUsSection() {
               Last Bite Eats  is <span className="text-primary font-semibold">{"India's first surplus food app, founded in 2025 to reduce Unconsumed Food and promote sustainability. We connect consumers with nearby restaurants, cafés, bakeries, and supermarkets offering unsold, perfectly good food at discounted prices."}</span>
             </p>
           </div>
-          
+
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               {/* Main illustration */}
               <div className="w-72 h-72 relative z-10 ">
-                <img 
-                  src="images/about/last-bite-laptop.jpeg" 
-                  alt="Last Bite Eats  Illustration" 
+                <img
+                  src="images/about/last-bite-laptop.jpeg"
+                  alt="Last Bite Eats  Illustration"
                   className="w-full h-full object-contain "
                 />
               </div>
-              
+
               {/* Decorative circles */}
               <div className="absolute top-0 right-0 w-40 h-40 bg-lush-mint/20 rounded-full -z-10"></div>
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-citrus-gold/30 rounded-full -z-10"></div>
@@ -44,17 +44,17 @@ export default function AboutUsSection() {
             </div>
           </div>
         </div>
-        
+
         {/* Main content with illustration */}
         <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="relative">
-              <img 
-                src="images/about/three-people-gift.jpeg" 
-                alt="Food waste reduction" 
+              <img
+                src="images/about/three-people-gift.jpeg"
+                alt="Food waste reduction"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
-              
+
               {/* Floating badge */}
               <div className="absolute -top-6 -right-6 bg-white rounded-lg shadow-lg p-4 transform rotate-3">
                 <div className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export default function AboutUsSection() {
                   <span className="font-semibold text-primary">Eco-Friendly</span>
                 </div>
               </div>
-              
+
               {/* Floating badge */}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-lg p-4 transform -rotate-2">
                 <div className="flex items-center gap-2">
@@ -72,12 +72,12 @@ export default function AboutUsSection() {
               </div>
             </div>
           </div>
-          
+
           <div className="md:w-1/2 order-1 md:order-2">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Our platform helps businesses <span className="text-primary font-semibold">recover revenue</span>, consumers <span className="text-primary font-semibold">save money</span>, and the planet by <span className="text-primary font-semibold">reducing waste</span> — all with one simple app.
             </p>
-            
+
             {/* Benefits cards instead of stats */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
               <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border border-ash-gray/50 transform transition-transform hover:scale-105">
@@ -87,7 +87,7 @@ export default function AboutUsSection() {
                 <h3 className="font-bold text-lg mb-2 text-deep-forest">Sustainable Future</h3>
                 <p className="text-gray-600">Help create a more sustainable future by rescuing perfectly good food.</p>
               </div>
-              
+
               <div className="bg-soft-ivory p-6 rounded-xl shadow-sm border border-ash-gray/50 transform transition-transform hover:scale-105">
                 <div className="bg-coral-red/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6 text-coral-red" />
@@ -98,49 +98,49 @@ export default function AboutUsSection() {
             </div>
           </div>
         </div>
-        
+
         {/* Mission & Vision - Completely Redesigned */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-rich-charcoal mb-2">Our Vision & Mission</h2>
             <p className="text-gray-600 max-w-xl mx-auto">What drives us every day to make a difference</p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1 bg-white rounded-2xl overflow-hidden shadow-lg border border-ash-gray/20 transform transition-all hover:shadow-xl">
               <div className="h-40 bg-gradient-to-r from-primary-green to-deep-forest relative overflow-hidden">
                 {/* Abstract pattern */}
                 <div className="absolute inset-0 opacity-20">
                   <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0,0 L100,0 L100,100 C75,70 50,100 25,70 L0,100 Z" fill="white"/>
+                    <path d="M0,0 L100,0 L100,100 C75,70 50,100 25,70 L0,100 Z" fill="white" />
                   </svg>
                 </div>
-                
+
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Target className="h-20 w-20 text-white opacity-80" />
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed">A world where no food goes to waste and everyone enjoys affordable, sustainable meals.</p>
               </div>
             </div>
-            
+
             <div className="flex-1 bg-white rounded-2xl overflow-hidden shadow-lg border border-ash-gray/20 transform transition-all hover:shadow-xl">
               <div className="h-40 bg-gradient-to-r from-coral-red to-citrus-gold relative overflow-hidden">
                 {/* Abstract pattern */}
                 <div className="absolute inset-0 opacity-20">
                   <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0,0 L100,0 L100,100 C75,70 50,100 25,70 L0,100 Z" fill="white"/>
+                    <path d="M0,0 L100,0 L100,100 C75,70 50,100 25,70 L0,100 Z" fill="white" />
                   </svg>
                 </div>
-                
+
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Leaf className="h-20 w-20 text-white opacity-80" />
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-coral-red mb-4">Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed">Create a smart, eco-friendly food marketplace that supports waste reduction, low-cost quality food, and community impact.</p>
@@ -152,77 +152,120 @@ export default function AboutUsSection() {
         <div className='space-y-20'>
           <h2 className="text-3xl font-bold text-primary text-center">Meet Our Team</h2>
           <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
-            {/* Team Member 1 */}
-            <div className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:-translate-y-2 active:scale-95 lg:active:scale-100">
+
+            {/* Team Member 2 */}
+            <div
+              tabIndex={0}  // makes it focusable
+              className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer 
+             group transform transition-transform duration-300 
+             hover:-translate-y-2 focus:-translate-y-2"
+            >
               {/* Background Image */}
               <div className="absolute inset-0">
-                <Image 
-                  src="/images/about/founder-image.jpg" 
-                  alt="Sanjeetha Fakrudeen" 
+                <Image
+                  src="/images/about/founder-male-image.jpg"
+                  alt="Ilyas"
                   fill
                   className="object-cover"
                 />
               </div>
-              
-              {/* Gradient overlay for better text readability - denser shadow */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 lg:group-active:opacity-0 transition-opacity duration-300"></div>
-              
-              {/* Text overlay - staggered animation */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">
-                <h3 className="text-xl font-bold text-white mb-1 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">Sanjeetha Fakrudeen</h3>
-                <p className="text-white/90 text-sm transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300 delay-100">Co-Founder</p>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
+                  opacity-0 group-hover:opacity-100 group-focus:opacity-100 
+                  transition-opacity duration-300"></div>
+
+              {/* Text */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 
+                  transform translate-y-full 
+                  group-hover:translate-y-0 group-focus:translate-y-0 
+                  transition-transform duration-300">
+                <h3 className="text-xl font-bold text-white mb-1">Ilyas</h3>
+                <p className="text-white/90 text-sm delay-100">Founder</p>
               </div>
             </div>
 
-            {/* Team Member 2 */}
-            <div className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer group transform transition-transform duration-300 hover:-translate-y-2 active:scale-95 lg:active:scale-100">
+
+            {/* Team Member 1 */}
+            <div
+              tabIndex={0} // 👈 makes div focusable on mobile tap
+              className="relative w-64 h-80 rounded-2xl overflow-hidden cursor-pointer group 
+             transform transition-transform duration-300 
+             hover:-translate-y-2 focus:-translate-y-2 active:scale-95 lg:active:scale-100"
+            >
               {/* Background Image */}
               <div className="absolute inset-0">
-                <Image 
-                  src="/images/about/founder-male-image.jpg" 
-                  alt="Ilyas" 
+                <Image
+                  src="/images/about/founder-image.jpg"
+                  alt="Sanjeetha Fakrudeen"
                   fill
                   className="object-cover"
                 />
               </div>
-              
-              {/* Gradient overlay for better text readability - denser shadow */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 lg:group-active:opacity-0 transition-opacity duration-300"></div>
-              
-              {/* Text overlay - staggered animation */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">
-                <h3 className="text-xl font-bold text-white mb-1 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300">Ilyas</h3>
-                <p className="text-white/90 text-sm transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 lg:group-active:translate-y-full transition-transform duration-300 delay-100">Founder</p>
+
+              {/* Gradient overlay */}
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
+               opacity-0 group-hover:opacity-100 group-focus:opacity-100 
+               transition-opacity duration-300"
+              ></div>
+
+              {/* Text overlay */}
+              <div
+                className="absolute bottom-0 left-0 right-0 p-6 
+               transform translate-y-full 
+               group-hover:translate-y-0 group-focus:translate-y-0 
+               transition-transform duration-300"
+              >
+                <h3
+                  className="text-xl font-bold text-white mb-1 
+                 transform translate-y-full 
+                 group-hover:translate-y-0 group-focus:translate-y-0 
+                 transition-transform duration-300"
+                >
+                  Sanjeetha Fakrudeen
+                </h3>
+                <p
+                  className="text-white/90 text-sm 
+                 transform translate-y-full 
+                 group-hover:translate-y-0 group-focus:translate-y-0 
+                 transition-transform duration-300 delay-100"
+                >
+                  Co-Founder
+                </p>
               </div>
             </div>
+
+
+
           </div>
         </div>
-        
+
         {/* Goals Section - Completely Redesigned */}
         <div className="bg-soft-ivory rounded-2xl p-8 md:p-12 relative overflow-hidden">
           {/* Decorative patterns */}
           <div className="absolute top-0 right-0 opacity-10">
             <svg width="200" height="200" viewBox="0 0 200 200">
-              <path d="M0,0 L200,0 L200,200 L0,200 Z" fill="none" stroke="#01615F" strokeWidth="2"/>
-              <path d="M50,50 L150,50 L150,150 L50,150 Z" fill="none" stroke="#01615F" strokeWidth="2"/>
-              <path d="M100,0 L100,200" fill="none" stroke="#01615F" strokeWidth="2"/>
-              <path d="M0,100 L200,100" fill="none" stroke="#01615F" strokeWidth="2"/>
+              <path d="M0,0 L200,0 L200,200 L0,200 Z" fill="none" stroke="#01615F" strokeWidth="2" />
+              <path d="M50,50 L150,50 L150,150 L50,150 Z" fill="none" stroke="#01615F" strokeWidth="2" />
+              <path d="M100,0 L100,200" fill="none" stroke="#01615F" strokeWidth="2" />
+              <path d="M0,100 L200,100" fill="none" stroke="#01615F" strokeWidth="2" />
             </svg>
           </div>
-          
+
           <div className="relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between mb-10 gap-6">
               <div>
                 <h3 className="text-3xl font-bold text-primary mb-2">Our Goals</h3>
                 <p className="text-gray-600">What we aim to achieve in the near future</p>
               </div>
-              
+
               <div className="flex items-center gap-3 bg-white py-2 px-4 rounded-full shadow-sm">
                 <TrendingUp className="h-5 w-5 text-coral-red" />
                 <span className="font-medium">2025 Targets</span>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -251,8 +294,8 @@ export default function AboutUsSection() {
                   color: "bg-zesty-lime"
                 }
               ].map((goal, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-white rounded-xl p-6 shadow-sm border border-ash-gray/20 transform transition-all hover:shadow-lg hover:-translate-y-1"
                 >
                   <div className={`${goal.color} w-14 h-14 rounded-lg flex items-center justify-center mb-4 shadow-sm`}>
@@ -269,18 +312,18 @@ export default function AboutUsSection() {
         {/* Responsive Hand Image - Absolute on desktop, responsive on mobile */}
         <div className="lg:hidden flex justify-center mt-8 mb-8">
           <div className="w-48 sm:w-56 md:w-64 max-w-xs">
-            <img 
-              src="/images/about/cover.png" 
+            <img
+              src="/images/about/cover.png"
               alt="Hand illustration"
               className="w-full h-auto object-contain"
             />
           </div>
         </div>
-        
+
         {/* Desktop absolute positioned hand image */}
         <div className="hidden lg:block absolute right-2 xl:right-4 bottom-8 xl:bottom-12 w-60 xl:w-72 2xl:w-80 z-20">
-          <img 
-            src="/images/about/cover.png" 
+          <img
+            src="/images/about/cover.png"
             alt="Hand illustration"
             className="w-full h-auto object-contain"
           />
@@ -292,7 +335,7 @@ export default function AboutUsSection() {
             Start Saving Food Today
           </h3>
           <p className="max-w-xl mx-auto text-base md:text-lg text-gray-700 mb-6">
-            With Last Bite Eats , you get great food at low prices while helping the planet. 
+            With Last Bite Eats , you get great food at low prices while helping the planet.
             Download the app and be part of the solution.
           </p>
           <button
