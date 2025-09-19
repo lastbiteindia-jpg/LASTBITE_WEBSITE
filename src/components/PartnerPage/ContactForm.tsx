@@ -373,7 +373,7 @@ export default function ContactForm() {
                         <p className="text-sm text-amber-300">Partner onboarding in as little as 48 hours</p>
                       </div>
                       <p className="text-teal-100 text-sm">
-                        Have questions? Contact us at <a href="mailto:partners@example.com" className="text-white underline">partners@example.com</a>
+                        Have questions? Contact us at <a href="mailto:support@lastbiteindia.com" className="text-white underline">support@lastbiteindia.com</a>
                       </p>
                     </div>
                   </div>
