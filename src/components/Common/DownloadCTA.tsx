@@ -1,10 +1,11 @@
 "use client";
 import { useState, useEffect } from 'react';
-// import { Apple, Smartphone, CheckCircle, MapPin, Clock } from 'lucide-react';
-import {CheckCircle, MapPin, Clock } from 'lucide-react';
+import { Apple, Smartphone, CheckCircle, MapPin, Clock } from 'lucide-react';
+import TermsModal from './TermsModal';
 export default function DownloadCTA() {
   const [, setIsVisible] = useState(false);
   const [, setAnimatePhone] = useState(false);
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
 
   useEffect(() => {
     // Enhanced animation sequence with better timing
@@ -21,6 +22,15 @@ export default function DownloadCTA() {
       clearTimeout(phoneTimer);
     };
   }, []);
+
+  const handleDownloadClick = () => {
+    setIsTermsModalOpen(true);
+  };
+
+  const handleTermsAccept = () => {
+    // Redirect to Play Store
+    window.open('https://play.google.com/store/apps/details?id=com.nous.lastbite&hl=en', '_blank');
+  };
 
   return (
     <div className="relative w-full overflow-hidden py-20 md:py-28"
@@ -58,9 +68,12 @@ export default function DownloadCTA() {
               Get incredible deals on quality food while fighting waste. Join thousands of eco-conscious shoppers saving money every day.
             </p>
             
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
              
-              <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
+              <button 
+                onClick={handleDownloadClick}
+                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl"
+              >
                 <Apple className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs opacity-80">Download on the</div>
@@ -69,14 +82,17 @@ export default function DownloadCTA() {
               </button>
               
               
-              <button className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl">
+              <button 
+                onClick={handleDownloadClick}
+                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl"
+              >
                 <Smartphone className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs opacity-80">GET IT ON</div>
                   <div className="text-base">Google Play</div>
                 </div>
               </button>
-            </div> */}
+            </div>
             
             {/* Feature badges replacing stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -318,6 +334,13 @@ export default function DownloadCTA() {
           animation: scaleIn 0.5s ease-out forwards;
         }
       `}</style>
+      
+      {/* Terms Modal */}
+      <TermsModal
+        isOpen={isTermsModalOpen}
+        onClose={() => setIsTermsModalOpen(false)}
+        onAccept={handleTermsAccept}
+      />
     </div>
   );
 }

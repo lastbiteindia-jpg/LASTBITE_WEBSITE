@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-// import { Download, ChevronDown } from 'lucide-react';
-import {  ChevronDown } from 'lucide-react';
+import { Download, ChevronDown } from 'lucide-react';
+import TermsModal from '../Common/TermsModal';
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
   
   useEffect(() => {
     setIsVisible(true);
@@ -13,6 +14,15 @@ export default function HeroSection() {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleDownloadClick = () => {
+    setIsTermsModalOpen(true);
+  };
+
+  const handleTermsAccept = () => {
+    // Redirect to Play Store
+    window.open('https://play.google.com/store/apps/details?id=com.nous.lastbite&hl=en', '_blank');
   };
 
   return (
@@ -56,16 +66,22 @@ export default function HeroSection() {
           </p> */}
           
           {/* Download Buttons */}
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <button className="bg-coral-red hover:bg-coral-red/90 text-soft-ivory rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <button 
+              onClick={handleDownloadClick}
+              className="bg-coral-red hover:bg-coral-red/90 text-soft-ivory rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
               <Download size={20} />
               Download for iOS
             </button>
-            <button className="bg-lush-mint hover:bg-lush-mint/90 text-primary rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button 
+              onClick={handleDownloadClick}
+              className="bg-lush-mint hover:bg-lush-mint/90 text-primary rounded-full px-8 py-4 flex items-center gap-2 font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
               <Download size={20} />
               Download for Android
             </button>
-          </div> */}
+          </div>
         </div>
         
         {/* Scroll Indicator */}
@@ -104,6 +120,13 @@ export default function HeroSection() {
 
 
       </div>
+      
+      {/* Terms Modal */}
+      <TermsModal
+        isOpen={isTermsModalOpen}
+        onClose={() => setIsTermsModalOpen(false)}
+        onAccept={handleTermsAccept}
+      />
     </div>
   );
 }
