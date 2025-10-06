@@ -53,13 +53,13 @@ export default function HeroSection() {
           
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !text-[var(--soft-ivory)] mb-4 mt-4">
-            {"India's Surplus destination"}
-           
+            {"India's First Ever"}<br/>
+            {"#SurplusFoodDeliveryApp"}
           </h1>
             {/* Trust Badge */}
-          <div className="inline-block mb-6 mt-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
+          {/* <div className="inline-block mb-6 mt-6 px-4 py-1 bg-soft-ivory/90 rounded-full">
             <p className="text-primary font-semibold text-sm md:text-base tracking-wider"> WE DELIVER TRUST </p>
-          </div>
+          </div> */}
           {/* Slogan */}
           {/* <p className="text-xl md:text-2xl text-soft-ivory/90 mt-6 mb-10">
             Reduce Unconsumed Food, Feed the Future — One Bite at a Time
