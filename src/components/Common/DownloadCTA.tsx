@@ -1,11 +1,9 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { Apple, Smartphone, CheckCircle, MapPin, Clock } from 'lucide-react';
-import TermsModal from './TermsModal';
 export default function DownloadCTA() {
   const [, setIsVisible] = useState(false);
   const [, setAnimatePhone] = useState(false);
-  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
 
   useEffect(() => {
     // Enhanced animation sequence with better timing
@@ -23,13 +21,12 @@ export default function DownloadCTA() {
     };
   }, []);
 
-  const handleDownloadClick = () => {
-    setIsTermsModalOpen(true);
+  const handleIOSDownload = () => {
+    window.open('https://apps.apple.com/in/app/last-bite-eats/id6755689355', '_blank', 'noopener,noreferrer');
   };
 
-  const handleTermsAccept = () => {
-    // Redirect to Play Store
-    window.open('https://play.google.com/store/apps/details?id=com.nous.lastbite&hl=en', '_blank');
+  const handleAndroidDownload = () => {
+    window.open('https://play.google.com/store/apps/details?id=com.nous.lastbite', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -71,8 +68,8 @@ export default function DownloadCTA() {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
              
               <button 
-                onClick={handleDownloadClick}
-                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl"
+                onClick={handleIOSDownload}
+                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl cursor-pointer"
               >
                 <Apple className="w-6 h-6" />
                 <div className="text-left">
@@ -83,8 +80,8 @@ export default function DownloadCTA() {
               
               
               <button 
-                onClick={handleDownloadClick}
-                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl"
+                onClick={handleAndroidDownload}
+                className="group flex items-center justify-center gap-3 !bg-white !hover:bg-coral-red transition-all duration-300 rounded-xl py-4 px-6 font-bold !text-primary shadow-lg shadow-emerald-900/20 transform hover:scale-105 hover:shadow-xl cursor-pointer"
               >
                 <Smartphone className="w-6 h-6" />
                 <div className="text-left">
@@ -334,13 +331,6 @@ export default function DownloadCTA() {
           animation: scaleIn 0.5s ease-out forwards;
         }
       `}</style>
-      
-      {/* Terms Modal */}
-      <TermsModal
-        isOpen={isTermsModalOpen}
-        onClose={() => setIsTermsModalOpen(false)}
-        onAccept={handleTermsAccept}
-      />
     </div>
   );
 }
